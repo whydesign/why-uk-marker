@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "whydesign-blocks/why-uk-marker",
+	"version": "1.0.0",
+	"title": "UIkit Marker",
+	"category": "media",
+	"icon": "insert",
+	"description": "Create marker icon's with tooltips and url links that can be displayed on top of images.",
+	"keywords": [ "image", "marker", "hotspots", "uikit", "img", "photo", "picture" ],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "why-uk-marker",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"image": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+		"marker": {
+			"type": "array",
+			"default": [],
+			"source": "query",
+			"selector": ".marker",
+			"query": {
+				"x": {
+					"type": "number",
+					"source": "attribute",
+					"attribute": "data-x"
+				},
+				"y": {
+					"type": "number",
+					"source": "attribute",
+					"attribute": "data-y"
+				},
+				"label": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "data-label"
+				},
+				"link": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "href"
+				},
+				"style": {
+					"type": "string",
+					"default": "light",
+					"source": "attribute",
+					"attribute": "class"
+				},
+				"styleToggle": {
+					"type": "boolean",
+					"source": "attribute",
+					"attribute": "data-style",
+					"default": false
+				}
+			}
+		}
+	}
+}
