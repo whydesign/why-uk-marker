@@ -13,10 +13,5 @@ Create marker icon's with tooltips and url links that can be displayed on top of
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/why-uk-marker` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
-== Changelog ==
-
-= 0.1.0 =
-* Release
+2. Activate the plugin through the 'Plugins' screen in WordPress
 
